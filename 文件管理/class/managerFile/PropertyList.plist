@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>type</key>
+		<string>2</string>
+		<key>title</key>
+		<string>文档文件</string>
+		<key>image</key>
+		<string>text.png</string>
+		<key>suffix</key>
+		<string>、docx、rtf、txt（所有文字处理软件或编辑器都可打开）、doc（word及wps等软件可打开）、hlp（adobe acrobat reader可打开）、wps（wps软件可打开）、rtf（word及wps等软件可打开）、html（各种浏览器可打开、用写字板打开可查看其源代码）、pdf（adobe acrobat reader 和各种电子阅读软件可打开）</string>
+	</dict>
+	<dict>
+		<key>type</key>
+		<string>3</string>
+		<key>title</key>
+		<string>压缩文件</string>
+		<key>image</key>
+		<string>zip.png</string>
+		<key>suffix</key>
+		<string>、rar（winrar可打开）、zip（winzip可打开）、arj（用arj解压缩后可打开）、gz（unix系统的压缩文件，用winzip可打开）、z（unix系统的压缩文件，用winzip可打开）</string>
+	</dict>
+	<dict>
+		<key>type</key>
+		<string>4</string>
+		<key>title</key>
+		<string>声音文件</string>
+		<key>image</key>
+		<string>mp3.png</string>
+		<key>suffix</key>
+		<string>、wav（媒本播放器可打开）、aif（常用声音处理软件可打开）、au（常用声音处理软件可打开）、mp3（由winamp播放）、ram（由realplayer播放）、wma、mmf、amr、aac、flac</string>
+	</dict>
+</array>
+</plist>

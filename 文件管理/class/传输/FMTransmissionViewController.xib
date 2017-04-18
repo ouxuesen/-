@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FMTransmissionViewController">
+            <connections>
+                <outlet property="view" destination="A4q-NK-fjf" id="1Cn-EK-o2W"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="A4q-NK-fjf">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" translatesAutoresizingMaskIntoConstraints="NO" id="VA7-9W-R8e">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="cob-4W-veW"/>
+                        <outlet property="delegate" destination="-1" id="4rA-DT-Qz5"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="VA7-9W-R8e" firstAttribute="leading" secondItem="A4q-NK-fjf" secondAttribute="leading" id="YTH-Yu-N2R"/>
+                <constraint firstAttribute="bottom" secondItem="VA7-9W-R8e" secondAttribute="bottom" id="fqV-jV-iCR"/>
+                <constraint firstItem="VA7-9W-R8e" firstAttribute="top" secondItem="A4q-NK-fjf" secondAttribute="top" id="gGj-mG-dcI"/>
+                <constraint firstAttribute="trailing" secondItem="VA7-9W-R8e" secondAttribute="trailing" id="khy-Li-J4o"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+            <point key="canvasLocation" x="156" y="200"/>
+        </view>
+    </objects>
+</document>
