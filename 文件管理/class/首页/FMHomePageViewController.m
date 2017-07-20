@@ -272,10 +272,11 @@ static NSString* CellIdentifier = @"FMCollectionViewCell" ;
 {
     DirectoryElement *element =contenArray[_currentIndexpath.row];
     
-   _documentController = [UIDocumentInteractionController interactionControllerWithURL:[NSURL fileURLWithPath:element.path]];
-    CGRect rect = self.view.frame;
+
+    _documentController = [UIDocumentInteractionController interactionControllerWithURL:[NSURL fileURLWithPath:element.path]];
+    CGRect rect = CGRectMake(0, 0, self.view.frame.size.width,self.view.frame.size.height*0.6);
 //    这里有两种打开方式，一种是快速预览模式，一种是第三方应用打开模式
-      BOOL open = [_documentController presentOptionsMenuFromRect:rect inView:self.view animated:YES];
+      BOOL open =[_documentController presentOptionsMenuFromRect:rect inView:self.view animated:YES];
     
     if (open) {
         

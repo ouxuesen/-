@@ -131,7 +131,7 @@
 		A4E808631B96E45B00DB3552 /* FMWIFITransmissionVCViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A4E808611B96E45B00DB3552 /* FMWIFITransmissionVCViewController.xib */; };
 		A4E808671B96E5EC00DB3552 /* FMCoreBlueToothViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4E808651B96E5EC00DB3552 /* FMCoreBlueToothViewController.m */; };
 		A4E808681B96E5EC00DB3552 /* FMCoreBlueToothViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A4E808661B96E5EC00DB3552 /* FMCoreBlueToothViewController.xib */; };
-		A4E8086E1B96F84800DB3552 /* images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A4E8086D1B96F84800DB3552 /* images.xcassets */; };
+		D7F1223E1EA60C7200851E0E /* images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D7F1223D1EA60C7200851E0E /* images.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -451,7 +451,7 @@
 		A4E808641B96E5EC00DB3552 /* FMCoreBlueToothViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMCoreBlueToothViewController.h; sourceTree = "<group>"; };
 		A4E808651B96E5EC00DB3552 /* FMCoreBlueToothViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMCoreBlueToothViewController.m; sourceTree = "<group>"; };
 		A4E808661B96E5EC00DB3552 /* FMCoreBlueToothViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FMCoreBlueToothViewController.xib; sourceTree = "<group>"; };
-		A4E8086D1B96F84800DB3552 /* images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = images.xcassets; sourceTree = "<group>"; };
+		D7F1223D1EA60C7200851E0E /* images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = images.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -710,6 +710,7 @@
 		A4560C551B8C4DBF000A9F73 /* 文件管理 */ = {
 			isa = PBXGroup;
 			children = (
+				D7F1223D1EA60C7200851E0E /* images.xcassets */,
 				A4C7C3B21B95B43F00467243 /* framework */,
 				A4560C7C1B8C5701000A9F73 /* class */,
 				A4560C5A1B8C4DBF000A9F73 /* AppDelegate.h */,
@@ -719,7 +720,6 @@
 				A4560C601B8C4DBF000A9F73 /* Main.storyboard */,
 				A404355C1B8C5E2C00E870D6 /* ManagerPrefixHeader.pch */,
 				A4560C651B8C4DBF000A9F73 /* LaunchScreen.xib */,
-				A4E8086D1B96F84800DB3552 /* images.xcassets */,
 				A4560C561B8C4DBF000A9F73 /* Supporting Files */,
 			);
 			path = "文件管理";
@@ -1204,7 +1204,7 @@
 				TargetAttributes = {
 					A4560C521B8C4DBF000A9F73 = {
 						CreatedOnToolsVersion = 6.4;
-						DevelopmentTeam = JQP8B44J84;
+						DevelopmentTeam = 4B7W4R45RH;
 					};
 					A4560C6B1B8C4DC0000A9F73 = {
 						CreatedOnToolsVersion = 6.4;
@@ -1246,6 +1246,7 @@
 				A40435971B8C861900E870D6 /* vedio@2x.png in Resources */,
 				A44E13E11B943B1800E15A55 /* AQGridSelectionGreen.png in Resources */,
 				A4560C671B8C4DBF000A9F73 /* LaunchScreen.xib in Resources */,
+				D7F1223E1EA60C7200851E0E /* images.xcassets in Resources */,
 				A46765B01B95947000CFC187 /* FMResetTableViewCell.xib in Resources */,
 				A404357D1B8C67CA00E870D6 /* FMPhotoAlbumViewController.xib in Resources */,
 				A40435981B8C861900E870D6 /* zip@2x.png in Resources */,
@@ -1255,7 +1256,6 @@
 				A44E13BC1B943AF000E15A55 /* ShowPhotosViewController.xib in Resources */,
 				A404359A1B8C87F700E870D6 /* Mime.plist in Resources */,
 				A40435951B8C861900E870D6 /* mp3@2x.png in Resources */,
-				A4E8086E1B96F84800DB3552 /* images.xcassets in Resources */,
 				A48B43241B8D91A900871DE7 /* kxmovie.bundle in Resources */,
 				A4E808681B96E5EC00DB3552 /* FMCoreBlueToothViewController.xib in Resources */,
 				A48B432D1B8D91AE00871DE7 /* POPPassWordViewController.xib in Resources */,
@@ -1497,6 +1497,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 4B7W4R45RH;
 				ENABLE_BITCODE = NO;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/文件管理/ManagerPrefixHeader.pch";
 				HEADER_SEARCH_PATHS = (
@@ -1511,9 +1512,10 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/文件管理/class/tool/vedioPalay/FFmpeg-iOS/lib",
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.letv.aa;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -1524,6 +1526,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 4B7W4R45RH;
 				ENABLE_BITCODE = NO;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/文件管理/ManagerPrefixHeader.pch";
 				HEADER_SEARCH_PATHS = (
@@ -1538,9 +1541,10 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/文件管理/class/tool/vedioPalay/FFmpeg-iOS/lib",
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.letv.aa;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
