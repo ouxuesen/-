@@ -48,7 +48,7 @@ class DZMMainUnitl:NSObject {
         let vc  = DZMReadController()
         
         vc.readModel = DZMReadModel.model(bookID: bookId)
-        viewcontroller?.hidesBottomBarWhenPushed = true
+        vc.hidesBottomBarWhenPushed = true
         viewcontroller?.navigationController?.pushViewController(vc, animated: true)
     }
     
