@@ -11,9 +11,9 @@
 #import "FMWebViewController.h"
 #import "KxMovieViewController.h"
 #import "Main.h"
-#import "MCPhotoShowViewController.h"
 #import "CoreBlueToothCentral.h"
 #import "TranssionProcessView.h"
+#import "文件管理-Swift.h"
 
 static NSString* CellIdentifier = @"FMCollectionViewCell" ;
 @interface FMHomePageViewController ()<UIAlertViewDelegate,CoreBlueToothCentralDelegate>
@@ -133,13 +133,12 @@ static NSString* CellIdentifier = @"FMCollectionViewCell" ;
         KxMovieViewController *vc = [KxMovieViewController movieViewControllerWithContentPath:path
                                                                                    parameters:parameters];
         [self.navigationController pushViewController:vc animated:YES];
-    }else if(element.elementType == ElementType_photo){
-        MCPhotoShowViewController *showVC = [[MCPhotoShowViewController alloc] initWithNibName:@"MCPhotoShowViewController" bundle:nil];
-        showVC.dataSourceArray = @[element];
-    
-        showVC.currentIndex = 0;
-        [self.navigationController pushViewController:showVC animated:true];
-        
+    }else if(element.elementType == ElementType_text){
+        //小说
+        DZMMainUnitl*mainUnitl = [[DZMMainUnitl alloc] init];
+        [mainUnitl fullRead:self :element.path];
+       
+
     }else{
         NSString * patch = [[NSBundle mainBundle] pathForResource:@"Mime.plist" ofType:nil];
         NSDictionary * mimetDic = [NSDictionary dictionaryWithContentsOfFile:patch];

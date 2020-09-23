@@ -10,8 +10,8 @@
 #import "FMTransmissionViewController.h"
 #import "FMSettingViewController.h"
 #import "FMHomePageViewController.h"
-#import "FMPhotoAlbumViewController.h"
 #import "FileManageCommon.h"
+#import "ReadParserTextListViewController.h"
 @interface ViewController ()
 {
     NSArray * classArrayName;
@@ -25,8 +25,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    classArrayName = @[@"FMHomePageViewController",@"FMPhotoAlbumViewController",@"FMTransmissionViewController",@"FMSettingViewController"];
-    titleArray = @[@"首页",@"相册",@"传输",@"设置"];
+    classArrayName = @[@"FMHomePageViewController",@"ReadParserTextListViewController",@"FMTransmissionViewController",@"FMSettingViewController"];
+    titleArray = @[@"首页",@"小说",@"传输",@"设置"];
     UITabBarController * mainTabBarVC = [[UITabBarController alloc]init];
     mainTabBarVC.viewControllers = [self mainViewConrollWithArrayName:classArrayName];
     [self addChildViewController:mainTabBarVC];
@@ -44,7 +44,7 @@
 }
 - (FMBaseViewController*)creatViewControllWithName:(NSString*)VCName
 {
-    FMBaseViewController * vc = [[NSClassFromString(VCName) alloc]initWithNibName:VCName bundle:nil];
+    FMBaseViewController * vc = [[NSClassFromString(VCName) alloc]init];
     return vc;
 }
 - (NSMutableArray*)mainViewConrollWithArrayName:(NSArray*)nameArray
