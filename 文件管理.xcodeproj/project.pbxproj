@@ -1204,7 +1204,7 @@
 				TargetAttributes = {
 					A4560C521B8C4DBF000A9F73 = {
 						CreatedOnToolsVersion = 6.4;
-						DevelopmentTeam = 4B7W4R45RH;
+						DevelopmentTeam = LRBM2DR6KJ;
 					};
 					A4560C6B1B8C4DC0000A9F73 = {
 						CreatedOnToolsVersion = 6.4;
@@ -1218,6 +1218,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -1497,7 +1498,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = 4B7W4R45RH;
+				DEVELOPMENT_TEAM = LRBM2DR6KJ;
 				ENABLE_BITCODE = NO;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/文件管理/ManagerPrefixHeader.pch";
 				HEADER_SEARCH_PATHS = (
@@ -1512,7 +1513,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/文件管理/class/tool/vedioPalay/FFmpeg-iOS/lib",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.letv.aa;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ginkgofit.aa;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1526,7 +1527,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = 4B7W4R45RH;
+				DEVELOPMENT_TEAM = LRBM2DR6KJ;
 				ENABLE_BITCODE = NO;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/文件管理/ManagerPrefixHeader.pch";
 				HEADER_SEARCH_PATHS = (
@@ -1541,7 +1542,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/文件管理/class/tool/vedioPalay/FFmpeg-iOS/lib",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.letv.aa;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ginkgofit.aa;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
